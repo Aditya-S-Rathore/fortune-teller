@@ -5,7 +5,7 @@ def main():
     admission_number = "20JE0062"
 
     print(f"\n🔮 Welcome to {name}'s Fortune Teller ({admission_number}) 🔮")
-    mood = input("How are you feeling today? (happy/sad/neutral): ").strip().lower()
+    mood = input("How are you feeling today? (happy/sad/neutral/stressed): ").strip().lower()
 
     print("\n✨ Your fortune:", end=" ")
 
@@ -15,6 +15,8 @@ def main():
         print("Better days are coming. Hang in there. ✨")
     elif mood == "neutral":
         print("Sometimes the middle path leads to the best destination. ✨")
+    elif mood == "stressed":
+        print("Don't worry about the future focus on present, Great things are ahead!✨")
     else:
         print("Hmm... I can't read that mood. Try happy, sad, or neutral. ✨")
 
